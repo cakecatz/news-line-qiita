@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle news-line-qiita'
+      'command': 'news-line-qiita:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'news-line-qiita'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'news-line-qiita:toggle'
+        }
+      ]
+    ]
+  }
+]
